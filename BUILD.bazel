@@ -1,3 +1,1 @@
 package(default_visibility = ["//visibility:public"])
-
-filegroup(name = '1.26', srcs = ['1.26/gen.libsonnet'])

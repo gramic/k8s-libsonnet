@@ -1,0 +1,43 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@io_bazel_rules_jsonnet//jsonnet:jsonnet.bzl", "jsonnet_library")
+
+jsonnet_library(
+    name = "apps",
+    srcs = ["apps.libsonnet"],
+)
+
+jsonnet_library(
+    name = "autoscaling",
+    srcs = ["autoscaling.libsonnet"],
+)
+
+jsonnet_library(
+    name = "batch",
+    srcs = ["batch.libsonnet"],
+)
+
+jsonnet_library(
+    name = "core",
+    srcs = ["core.libsonnet"],
+)
+
+jsonnet_library(
+    name = "list",
+    srcs = ["list.libsonnet"],
+)
+
+jsonnet_library(
+    name = "mapContainers",
+    srcs = ["mapContainers.libsonnet"],
+)
+
+jsonnet_library(
+    name = "rbac",
+    srcs = ["rbac.libsonnet"],
+)
+
+jsonnet_library(
+    name = "volumeMounts",
+    srcs = ["volumeMounts.libsonnet"],
+)

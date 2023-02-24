@@ -3,3 +3,5 @@ module(
   version = "1.26",
   compatibility_level = 1,
 )
+
+bazel_dep(name = "rules_jsonnet", version = "0.0.0-0.5.0", repo_name = "io_bazel_rules_jsonnet")

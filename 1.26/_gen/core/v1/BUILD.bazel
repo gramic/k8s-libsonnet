@@ -1,0 +1,1084 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@io_bazel_rules_jsonnet//jsonnet:jsonnet.bzl", "jsonnet_library")
+
+jsonnet_library(
+    name = "affinity",
+    srcs = ["affinity.libsonnet"],
+)
+
+jsonnet_library(
+    name = "attachedVolume",
+    srcs = ["attachedVolume.libsonnet"],
+)
+
+jsonnet_library(
+    name = "awsElasticBlockStoreVolumeSource",
+    srcs = ["awsElasticBlockStoreVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "azureDiskVolumeSource",
+    srcs = ["azureDiskVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "azureFilePersistentVolumeSource",
+    srcs = ["azureFilePersistentVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "azureFileVolumeSource",
+    srcs = ["azureFileVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "binding",
+    srcs = ["binding.libsonnet"],
+)
+
+jsonnet_library(
+    name = "capabilities",
+    srcs = ["capabilities.libsonnet"],
+)
+
+jsonnet_library(
+    name = "cephFSPersistentVolumeSource",
+    srcs = ["cephFSPersistentVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "cephFSVolumeSource",
+    srcs = ["cephFSVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "cinderPersistentVolumeSource",
+    srcs = ["cinderPersistentVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "cinderVolumeSource",
+    srcs = ["cinderVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "claimSource",
+    srcs = ["claimSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "clientIPConfig",
+    srcs = ["clientIPConfig.libsonnet"],
+)
+
+jsonnet_library(
+    name = "componentCondition",
+    srcs = ["componentCondition.libsonnet"],
+)
+
+jsonnet_library(
+    name = "componentStatus",
+    srcs = ["componentStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "configMap",
+    srcs = ["configMap.libsonnet"],
+)
+
+jsonnet_library(
+    name = "configMapEnvSource",
+    srcs = ["configMapEnvSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "configMapKeySelector",
+    srcs = ["configMapKeySelector.libsonnet"],
+)
+
+jsonnet_library(
+    name = "configMapNodeConfigSource",
+    srcs = ["configMapNodeConfigSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "configMapProjection",
+    srcs = ["configMapProjection.libsonnet"],
+)
+
+jsonnet_library(
+    name = "configMapVolumeSource",
+    srcs = ["configMapVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "container",
+    srcs = ["container.libsonnet"],
+)
+
+jsonnet_library(
+    name = "containerImage",
+    srcs = ["containerImage.libsonnet"],
+)
+
+jsonnet_library(
+    name = "containerPort",
+    srcs = ["containerPort.libsonnet"],
+)
+
+jsonnet_library(
+    name = "containerState",
+    srcs = ["containerState.libsonnet"],
+)
+
+jsonnet_library(
+    name = "containerStateRunning",
+    srcs = ["containerStateRunning.libsonnet"],
+)
+
+jsonnet_library(
+    name = "containerStateTerminated",
+    srcs = ["containerStateTerminated.libsonnet"],
+)
+
+jsonnet_library(
+    name = "containerStateWaiting",
+    srcs = ["containerStateWaiting.libsonnet"],
+)
+
+jsonnet_library(
+    name = "containerStatus",
+    srcs = ["containerStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "csiPersistentVolumeSource",
+    srcs = ["csiPersistentVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "csiVolumeSource",
+    srcs = ["csiVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "daemonEndpoint",
+    srcs = ["daemonEndpoint.libsonnet"],
+)
+
+jsonnet_library(
+    name = "downwardAPIProjection",
+    srcs = ["downwardAPIProjection.libsonnet"],
+)
+
+jsonnet_library(
+    name = "downwardAPIVolumeFile",
+    srcs = ["downwardAPIVolumeFile.libsonnet"],
+)
+
+jsonnet_library(
+    name = "downwardAPIVolumeSource",
+    srcs = ["downwardAPIVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "emptyDirVolumeSource",
+    srcs = ["emptyDirVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "endpointAddress",
+    srcs = ["endpointAddress.libsonnet"],
+)
+
+jsonnet_library(
+    name = "endpointPort",
+    srcs = ["endpointPort.libsonnet"],
+)
+
+jsonnet_library(
+    name = "endpointSubset",
+    srcs = ["endpointSubset.libsonnet"],
+)
+
+jsonnet_library(
+    name = "endpoints",
+    srcs = ["endpoints.libsonnet"],
+)
+
+jsonnet_library(
+    name = "envFromSource",
+    srcs = ["envFromSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "envVar",
+    srcs = ["envVar.libsonnet"],
+)
+
+jsonnet_library(
+    name = "envVarSource",
+    srcs = ["envVarSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "ephemeralContainer",
+    srcs = ["ephemeralContainer.libsonnet"],
+)
+
+jsonnet_library(
+    name = "ephemeralVolumeSource",
+    srcs = ["ephemeralVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "event",
+    srcs = ["event.libsonnet"],
+)
+
+jsonnet_library(
+    name = "eventSeries",
+    srcs = ["eventSeries.libsonnet"],
+)
+
+jsonnet_library(
+    name = "eventSource",
+    srcs = ["eventSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "execAction",
+    srcs = ["execAction.libsonnet"],
+)
+
+jsonnet_library(
+    name = "fcVolumeSource",
+    srcs = ["fcVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "flexPersistentVolumeSource",
+    srcs = ["flexPersistentVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "flexVolumeSource",
+    srcs = ["flexVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "flockerVolumeSource",
+    srcs = ["flockerVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "gcePersistentDiskVolumeSource",
+    srcs = ["gcePersistentDiskVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "gitRepoVolumeSource",
+    srcs = ["gitRepoVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "glusterfsPersistentVolumeSource",
+    srcs = ["glusterfsPersistentVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "glusterfsVolumeSource",
+    srcs = ["glusterfsVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "grpcAction",
+    srcs = ["grpcAction.libsonnet"],
+)
+
+jsonnet_library(
+    name = "hostAlias",
+    srcs = ["hostAlias.libsonnet"],
+)
+
+jsonnet_library(
+    name = "hostPathVolumeSource",
+    srcs = ["hostPathVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "httpGetAction",
+    srcs = ["httpGetAction.libsonnet"],
+)
+
+jsonnet_library(
+    name = "httpHeader",
+    srcs = ["httpHeader.libsonnet"],
+)
+
+jsonnet_library(
+    name = "iscsiPersistentVolumeSource",
+    srcs = ["iscsiPersistentVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "iscsiVolumeSource",
+    srcs = ["iscsiVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "keyToPath",
+    srcs = ["keyToPath.libsonnet"],
+)
+
+jsonnet_library(
+    name = "lifecycle",
+    srcs = ["lifecycle.libsonnet"],
+)
+
+jsonnet_library(
+    name = "lifecycleHandler",
+    srcs = ["lifecycleHandler.libsonnet"],
+)
+
+jsonnet_library(
+    name = "limitRange",
+    srcs = ["limitRange.libsonnet"],
+)
+
+jsonnet_library(
+    name = "limitRangeItem",
+    srcs = ["limitRangeItem.libsonnet"],
+)
+
+jsonnet_library(
+    name = "limitRangeSpec",
+    srcs = ["limitRangeSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "loadBalancerIngress",
+    srcs = ["loadBalancerIngress.libsonnet"],
+)
+
+jsonnet_library(
+    name = "loadBalancerStatus",
+    srcs = ["loadBalancerStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "localObjectReference",
+    srcs = ["localObjectReference.libsonnet"],
+)
+
+jsonnet_library(
+    name = "localVolumeSource",
+    srcs = ["localVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "main",
+    srcs = ["main.libsonnet"],
+    deps = [
+        ":affinity",
+        ":attachedVolume",
+        ":awsElasticBlockStoreVolumeSource",
+        ":azureDiskVolumeSource",
+        ":azureFilePersistentVolumeSource",
+        ":azureFileVolumeSource",
+        ":binding",
+        ":capabilities",
+        ":cephFSPersistentVolumeSource",
+        ":cephFSVolumeSource",
+        ":cinderPersistentVolumeSource",
+        ":cinderVolumeSource",
+        ":claimSource",
+        ":clientIPConfig",
+        ":componentCondition",
+        ":componentStatus",
+        ":configMap",
+        ":configMapEnvSource",
+        ":configMapKeySelector",
+        ":configMapNodeConfigSource",
+        ":configMapProjection",
+        ":configMapVolumeSource",
+        ":container",
+        ":containerImage",
+        ":containerPort",
+        ":containerState",
+        ":containerStateRunning",
+        ":containerStateTerminated",
+        ":containerStateWaiting",
+        ":containerStatus",
+        ":csiPersistentVolumeSource",
+        ":csiVolumeSource",
+        ":daemonEndpoint",
+        ":downwardAPIProjection",
+        ":downwardAPIVolumeFile",
+        ":downwardAPIVolumeSource",
+        ":emptyDirVolumeSource",
+        ":endpointAddress",
+        ":endpointPort",
+        ":endpointSubset",
+        ":endpoints",
+        ":envFromSource",
+        ":envVar",
+        ":envVarSource",
+        ":ephemeralContainer",
+        ":ephemeralVolumeSource",
+        ":event",
+        ":eventSeries",
+        ":eventSource",
+        ":execAction",
+        ":fcVolumeSource",
+        ":flexPersistentVolumeSource",
+        ":flexVolumeSource",
+        ":flockerVolumeSource",
+        ":gcePersistentDiskVolumeSource",
+        ":gitRepoVolumeSource",
+        ":glusterfsPersistentVolumeSource",
+        ":glusterfsVolumeSource",
+        ":grpcAction",
+        ":hostAlias",
+        ":hostPathVolumeSource",
+        ":httpGetAction",
+        ":httpHeader",
+        ":iscsiPersistentVolumeSource",
+        ":iscsiVolumeSource",
+        ":keyToPath",
+        ":lifecycle",
+        ":lifecycleHandler",
+        ":limitRange",
+        ":limitRangeItem",
+        ":limitRangeSpec",
+        ":loadBalancerIngress",
+        ":loadBalancerStatus",
+        ":localObjectReference",
+        ":localVolumeSource",
+        ":namespace",
+        ":namespaceCondition",
+        ":namespaceSpec",
+        ":namespaceStatus",
+        ":nfsVolumeSource",
+        ":node",
+        ":nodeAddress",
+        ":nodeAffinity",
+        ":nodeCondition",
+        ":nodeConfigSource",
+        ":nodeConfigStatus",
+        ":nodeDaemonEndpoints",
+        ":nodeSelector",
+        ":nodeSelectorRequirement",
+        ":nodeSelectorTerm",
+        ":nodeSpec",
+        ":nodeStatus",
+        ":nodeSystemInfo",
+        ":objectFieldSelector",
+        ":objectReference",
+        ":persistentVolume",
+        ":persistentVolumeClaim",
+        ":persistentVolumeClaimCondition",
+        ":persistentVolumeClaimSpec",
+        ":persistentVolumeClaimStatus",
+        ":persistentVolumeClaimTemplate",
+        ":persistentVolumeClaimVolumeSource",
+        ":persistentVolumeSpec",
+        ":persistentVolumeStatus",
+        ":photonPersistentDiskVolumeSource",
+        ":pod",
+        ":podAffinity",
+        ":podAffinityTerm",
+        ":podAntiAffinity",
+        ":podCondition",
+        ":podDNSConfig",
+        ":podDNSConfigOption",
+        ":podIP",
+        ":podOS",
+        ":podReadinessGate",
+        ":podResourceClaim",
+        ":podSchedulingGate",
+        ":podSecurityContext",
+        ":podSpec",
+        ":podStatus",
+        ":podTemplate",
+        ":podTemplateSpec",
+        ":portStatus",
+        ":portworxVolumeSource",
+        ":preferredSchedulingTerm",
+        ":probe",
+        ":projectedVolumeSource",
+        ":quobyteVolumeSource",
+        ":rbdPersistentVolumeSource",
+        ":rbdVolumeSource",
+        ":replicationController",
+        ":replicationControllerCondition",
+        ":replicationControllerSpec",
+        ":replicationControllerStatus",
+        ":resourceClaim",
+        ":resourceFieldSelector",
+        ":resourceQuota",
+        ":resourceQuotaSpec",
+        ":resourceQuotaStatus",
+        ":resourceRequirements",
+        ":scaleIOPersistentVolumeSource",
+        ":scaleIOVolumeSource",
+        ":scopeSelector",
+        ":scopedResourceSelectorRequirement",
+        ":seLinuxOptions",
+        ":seccompProfile",
+        ":secret",
+        ":secretEnvSource",
+        ":secretKeySelector",
+        ":secretProjection",
+        ":secretReference",
+        ":secretVolumeSource",
+        ":securityContext",
+        ":service",
+        ":serviceAccount",
+        ":serviceAccountTokenProjection",
+        ":servicePort",
+        ":serviceSpec",
+        ":serviceStatus",
+        ":sessionAffinityConfig",
+        ":storageOSPersistentVolumeSource",
+        ":storageOSVolumeSource",
+        ":sysctl",
+        ":taint",
+        ":tcpSocketAction",
+        ":toleration",
+        ":topologySelectorLabelRequirement",
+        ":topologySelectorTerm",
+        ":topologySpreadConstraint",
+        ":typedLocalObjectReference",
+        ":typedObjectReference",
+        ":volume",
+        ":volumeDevice",
+        ":volumeMount",
+        ":volumeNodeAffinity",
+        ":volumeProjection",
+        ":vsphereVirtualDiskVolumeSource",
+        ":weightedPodAffinityTerm",
+        ":windowsSecurityContextOptions",
+    ],
+)
+
+jsonnet_library(
+    name = "namespace",
+    srcs = ["namespace.libsonnet"],
+)
+
+jsonnet_library(
+    name = "namespaceCondition",
+    srcs = ["namespaceCondition.libsonnet"],
+)
+
+jsonnet_library(
+    name = "namespaceSpec",
+    srcs = ["namespaceSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "namespaceStatus",
+    srcs = ["namespaceStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nfsVolumeSource",
+    srcs = ["nfsVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "node",
+    srcs = ["node.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeAddress",
+    srcs = ["nodeAddress.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeAffinity",
+    srcs = ["nodeAffinity.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeCondition",
+    srcs = ["nodeCondition.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeConfigSource",
+    srcs = ["nodeConfigSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeConfigStatus",
+    srcs = ["nodeConfigStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeDaemonEndpoints",
+    srcs = ["nodeDaemonEndpoints.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeSelector",
+    srcs = ["nodeSelector.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeSelectorRequirement",
+    srcs = ["nodeSelectorRequirement.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeSelectorTerm",
+    srcs = ["nodeSelectorTerm.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeSpec",
+    srcs = ["nodeSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeStatus",
+    srcs = ["nodeStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "nodeSystemInfo",
+    srcs = ["nodeSystemInfo.libsonnet"],
+)
+
+jsonnet_library(
+    name = "objectFieldSelector",
+    srcs = ["objectFieldSelector.libsonnet"],
+)
+
+jsonnet_library(
+    name = "objectReference",
+    srcs = ["objectReference.libsonnet"],
+)
+
+jsonnet_library(
+    name = "persistentVolume",
+    srcs = ["persistentVolume.libsonnet"],
+)
+
+jsonnet_library(
+    name = "persistentVolumeClaim",
+    srcs = ["persistentVolumeClaim.libsonnet"],
+)
+
+jsonnet_library(
+    name = "persistentVolumeClaimCondition",
+    srcs = ["persistentVolumeClaimCondition.libsonnet"],
+)
+
+jsonnet_library(
+    name = "persistentVolumeClaimSpec",
+    srcs = ["persistentVolumeClaimSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "persistentVolumeClaimStatus",
+    srcs = ["persistentVolumeClaimStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "persistentVolumeClaimTemplate",
+    srcs = ["persistentVolumeClaimTemplate.libsonnet"],
+)
+
+jsonnet_library(
+    name = "persistentVolumeClaimVolumeSource",
+    srcs = ["persistentVolumeClaimVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "persistentVolumeSpec",
+    srcs = ["persistentVolumeSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "persistentVolumeStatus",
+    srcs = ["persistentVolumeStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "photonPersistentDiskVolumeSource",
+    srcs = ["photonPersistentDiskVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "pod",
+    srcs = ["pod.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podAffinity",
+    srcs = ["podAffinity.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podAffinityTerm",
+    srcs = ["podAffinityTerm.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podAntiAffinity",
+    srcs = ["podAntiAffinity.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podCondition",
+    srcs = ["podCondition.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podDNSConfig",
+    srcs = ["podDNSConfig.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podDNSConfigOption",
+    srcs = ["podDNSConfigOption.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podIP",
+    srcs = ["podIP.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podOS",
+    srcs = ["podOS.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podReadinessGate",
+    srcs = ["podReadinessGate.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podResourceClaim",
+    srcs = ["podResourceClaim.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podSchedulingGate",
+    srcs = ["podSchedulingGate.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podSecurityContext",
+    srcs = ["podSecurityContext.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podSpec",
+    srcs = ["podSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podStatus",
+    srcs = ["podStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podTemplate",
+    srcs = ["podTemplate.libsonnet"],
+)
+
+jsonnet_library(
+    name = "podTemplateSpec",
+    srcs = ["podTemplateSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "portStatus",
+    srcs = ["portStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "portworxVolumeSource",
+    srcs = ["portworxVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "preferredSchedulingTerm",
+    srcs = ["preferredSchedulingTerm.libsonnet"],
+)
+
+jsonnet_library(
+    name = "probe",
+    srcs = ["probe.libsonnet"],
+)
+
+jsonnet_library(
+    name = "projectedVolumeSource",
+    srcs = ["projectedVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "quobyteVolumeSource",
+    srcs = ["quobyteVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "rbdPersistentVolumeSource",
+    srcs = ["rbdPersistentVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "rbdVolumeSource",
+    srcs = ["rbdVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "replicationController",
+    srcs = ["replicationController.libsonnet"],
+)
+
+jsonnet_library(
+    name = "replicationControllerCondition",
+    srcs = ["replicationControllerCondition.libsonnet"],
+)
+
+jsonnet_library(
+    name = "replicationControllerSpec",
+    srcs = ["replicationControllerSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "replicationControllerStatus",
+    srcs = ["replicationControllerStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "resourceClaim",
+    srcs = ["resourceClaim.libsonnet"],
+)
+
+jsonnet_library(
+    name = "resourceFieldSelector",
+    srcs = ["resourceFieldSelector.libsonnet"],
+)
+
+jsonnet_library(
+    name = "resourceQuota",
+    srcs = ["resourceQuota.libsonnet"],
+)
+
+jsonnet_library(
+    name = "resourceQuotaSpec",
+    srcs = ["resourceQuotaSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "resourceQuotaStatus",
+    srcs = ["resourceQuotaStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "resourceRequirements",
+    srcs = ["resourceRequirements.libsonnet"],
+)
+
+jsonnet_library(
+    name = "scaleIOPersistentVolumeSource",
+    srcs = ["scaleIOPersistentVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "scaleIOVolumeSource",
+    srcs = ["scaleIOVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "scopeSelector",
+    srcs = ["scopeSelector.libsonnet"],
+)
+
+jsonnet_library(
+    name = "scopedResourceSelectorRequirement",
+    srcs = ["scopedResourceSelectorRequirement.libsonnet"],
+)
+
+jsonnet_library(
+    name = "seLinuxOptions",
+    srcs = ["seLinuxOptions.libsonnet"],
+)
+
+jsonnet_library(
+    name = "seccompProfile",
+    srcs = ["seccompProfile.libsonnet"],
+)
+
+jsonnet_library(
+    name = "secret",
+    srcs = ["secret.libsonnet"],
+)
+
+jsonnet_library(
+    name = "secretEnvSource",
+    srcs = ["secretEnvSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "secretKeySelector",
+    srcs = ["secretKeySelector.libsonnet"],
+)
+
+jsonnet_library(
+    name = "secretProjection",
+    srcs = ["secretProjection.libsonnet"],
+)
+
+jsonnet_library(
+    name = "secretReference",
+    srcs = ["secretReference.libsonnet"],
+)
+
+jsonnet_library(
+    name = "secretVolumeSource",
+    srcs = ["secretVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "securityContext",
+    srcs = ["securityContext.libsonnet"],
+)
+
+jsonnet_library(
+    name = "service",
+    srcs = ["service.libsonnet"],
+)
+
+jsonnet_library(
+    name = "serviceAccount",
+    srcs = ["serviceAccount.libsonnet"],
+)
+
+jsonnet_library(
+    name = "serviceAccountTokenProjection",
+    srcs = ["serviceAccountTokenProjection.libsonnet"],
+)
+
+jsonnet_library(
+    name = "servicePort",
+    srcs = ["servicePort.libsonnet"],
+)
+
+jsonnet_library(
+    name = "serviceSpec",
+    srcs = ["serviceSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "serviceStatus",
+    srcs = ["serviceStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "sessionAffinityConfig",
+    srcs = ["sessionAffinityConfig.libsonnet"],
+)
+
+jsonnet_library(
+    name = "storageOSPersistentVolumeSource",
+    srcs = ["storageOSPersistentVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "storageOSVolumeSource",
+    srcs = ["storageOSVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "sysctl",
+    srcs = ["sysctl.libsonnet"],
+)
+
+jsonnet_library(
+    name = "taint",
+    srcs = ["taint.libsonnet"],
+)
+
+jsonnet_library(
+    name = "tcpSocketAction",
+    srcs = ["tcpSocketAction.libsonnet"],
+)
+
+jsonnet_library(
+    name = "toleration",
+    srcs = ["toleration.libsonnet"],
+)
+
+jsonnet_library(
+    name = "topologySelectorLabelRequirement",
+    srcs = ["topologySelectorLabelRequirement.libsonnet"],
+)
+
+jsonnet_library(
+    name = "topologySelectorTerm",
+    srcs = ["topologySelectorTerm.libsonnet"],
+)
+
+jsonnet_library(
+    name = "topologySpreadConstraint",
+    srcs = ["topologySpreadConstraint.libsonnet"],
+)
+
+jsonnet_library(
+    name = "typedLocalObjectReference",
+    srcs = ["typedLocalObjectReference.libsonnet"],
+)
+
+jsonnet_library(
+    name = "typedObjectReference",
+    srcs = ["typedObjectReference.libsonnet"],
+)
+
+jsonnet_library(
+    name = "volume",
+    srcs = ["volume.libsonnet"],
+)
+
+jsonnet_library(
+    name = "volumeDevice",
+    srcs = ["volumeDevice.libsonnet"],
+)
+
+jsonnet_library(
+    name = "volumeMount",
+    srcs = ["volumeMount.libsonnet"],
+)
+
+jsonnet_library(
+    name = "volumeNodeAffinity",
+    srcs = ["volumeNodeAffinity.libsonnet"],
+)
+
+jsonnet_library(
+    name = "volumeProjection",
+    srcs = ["volumeProjection.libsonnet"],
+)
+
+jsonnet_library(
+    name = "vsphereVirtualDiskVolumeSource",
+    srcs = ["vsphereVirtualDiskVolumeSource.libsonnet"],
+)
+
+jsonnet_library(
+    name = "weightedPodAffinityTerm",
+    srcs = ["weightedPodAffinityTerm.libsonnet"],
+)
+
+jsonnet_library(
+    name = "windowsSecurityContextOptions",
+    srcs = ["windowsSecurityContextOptions.libsonnet"],
+)

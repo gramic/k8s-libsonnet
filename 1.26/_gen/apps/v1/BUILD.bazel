@@ -1,0 +1,160 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@io_bazel_rules_jsonnet//jsonnet:jsonnet.bzl", "jsonnet_library")
+
+jsonnet_library(
+    name = "controllerRevision",
+    srcs = ["controllerRevision.libsonnet"],
+)
+
+jsonnet_library(
+    name = "daemonSet",
+    srcs = ["daemonSet.libsonnet"],
+)
+
+jsonnet_library(
+    name = "daemonSetCondition",
+    srcs = ["daemonSetCondition.libsonnet"],
+)
+
+jsonnet_library(
+    name = "daemonSetSpec",
+    srcs = ["daemonSetSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "daemonSetStatus",
+    srcs = ["daemonSetStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "daemonSetUpdateStrategy",
+    srcs = ["daemonSetUpdateStrategy.libsonnet"],
+)
+
+jsonnet_library(
+    name = "deployment",
+    srcs = ["deployment.libsonnet"],
+)
+
+jsonnet_library(
+    name = "deploymentCondition",
+    srcs = ["deploymentCondition.libsonnet"],
+)
+
+jsonnet_library(
+    name = "deploymentSpec",
+    srcs = ["deploymentSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "deploymentStatus",
+    srcs = ["deploymentStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "deploymentStrategy",
+    srcs = ["deploymentStrategy.libsonnet"],
+)
+
+jsonnet_library(
+    name = "main",
+    srcs = ["main.libsonnet"],
+    deps = [
+        ":controllerRevision",
+        ":daemonSet",
+        ":daemonSetCondition",
+        ":daemonSetSpec",
+        ":daemonSetStatus",
+        ":daemonSetUpdateStrategy",
+        ":deployment",
+        ":deploymentCondition",
+        ":deploymentSpec",
+        ":deploymentStatus",
+        ":deploymentStrategy",
+        ":replicaSet",
+        ":replicaSetCondition",
+        ":replicaSetSpec",
+        ":replicaSetStatus",
+        ":rollingUpdateDaemonSet",
+        ":rollingUpdateDeployment",
+        ":rollingUpdateStatefulSetStrategy",
+        ":statefulSet",
+        ":statefulSetCondition",
+        ":statefulSetOrdinals",
+        ":statefulSetPersistentVolumeClaimRetentionPolicy",
+        ":statefulSetSpec",
+        ":statefulSetStatus",
+        ":statefulSetUpdateStrategy",
+    ],
+)
+
+jsonnet_library(
+    name = "replicaSet",
+    srcs = ["replicaSet.libsonnet"],
+)
+
+jsonnet_library(
+    name = "replicaSetCondition",
+    srcs = ["replicaSetCondition.libsonnet"],
+)
+
+jsonnet_library(
+    name = "replicaSetSpec",
+    srcs = ["replicaSetSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "replicaSetStatus",
+    srcs = ["replicaSetStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "rollingUpdateDaemonSet",
+    srcs = ["rollingUpdateDaemonSet.libsonnet"],
+)
+
+jsonnet_library(
+    name = "rollingUpdateDeployment",
+    srcs = ["rollingUpdateDeployment.libsonnet"],
+)
+
+jsonnet_library(
+    name = "rollingUpdateStatefulSetStrategy",
+    srcs = ["rollingUpdateStatefulSetStrategy.libsonnet"],
+)
+
+jsonnet_library(
+    name = "statefulSet",
+    srcs = ["statefulSet.libsonnet"],
+)
+
+jsonnet_library(
+    name = "statefulSetCondition",
+    srcs = ["statefulSetCondition.libsonnet"],
+)
+
+jsonnet_library(
+    name = "statefulSetOrdinals",
+    srcs = ["statefulSetOrdinals.libsonnet"],
+)
+
+jsonnet_library(
+    name = "statefulSetPersistentVolumeClaimRetentionPolicy",
+    srcs = ["statefulSetPersistentVolumeClaimRetentionPolicy.libsonnet"],
+)
+
+jsonnet_library(
+    name = "statefulSetSpec",
+    srcs = ["statefulSetSpec.libsonnet"],
+)
+
+jsonnet_library(
+    name = "statefulSetStatus",
+    srcs = ["statefulSetStatus.libsonnet"],
+)
+
+jsonnet_library(
+    name = "statefulSetUpdateStrategy",
+    srcs = ["statefulSetUpdateStrategy.libsonnet"],
+)
