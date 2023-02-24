@@ -5,3 +5,4 @@ module(
 )
 
 bazel_dep(name = "rules_jsonnet", version = "0.0.0-0.5.0", repo_name = "io_bazel_rules_jsonnet")
+bazel_dep(name = "docsonnet", version = "0.0.0-v0.0.5")

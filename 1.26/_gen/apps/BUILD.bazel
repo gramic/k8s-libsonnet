@@ -6,6 +6,6 @@ jsonnet_library(
     name = "main",
     srcs = ["main.libsonnet"],
     deps = [
-        "//1.26/_gen/apps:main",
+        "//1.26/_gen/apps/v1:main",
     ],
 )

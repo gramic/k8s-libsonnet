@@ -3,10 +3,18 @@ package(default_visibility = ["//visibility:public"])
 load("@io_bazel_rules_jsonnet//jsonnet:jsonnet.bzl", "jsonnet_library")
 
 jsonnet_library(
-    name = "main",
-    srcs = ["main.libsonnet"],
+    name = "gen",
+    srcs = ["gen.libsonnet"],
     deps = [
         "//1.26/_gen/apps:main",
         "//1.26/_gen/core:main",
+    ],
+)
+
+jsonnet_library(
+    name = "main",
+    srcs = ["main.libsonnet"],
+    deps = [
+        ":gen",
     ],
 )
